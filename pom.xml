@@ -1,13 +1,15 @@
-<build>
-   <plugins>
-     <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.2.1</version>
-        <configuration>
-           <outputDirectory><!-- Tomcat webapps location--></outputDirectory>
-           <!-- Example of Tomcat webapps location :D:\tomcat\webapps\ -->
-        </configuration>
-      </plugin>
+</project>
+ ........ 
+   <build>
+    <finalName>HelloWorld1</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId> 
+            <artifactId>maven-war-plugin</artifactId>
+            <configuration>
+                <outputDirectory>C:\Program Files (x86)\apache-tomcat-8.5.8\webapps\</outputDirectory>
+            </configuration>
+        </plugin>
     </plugins>
-</build>
+  </build>
+</project>

@@ -1,3 +1,5 @@
+# Use the official Tomcat 8 image
 FROM tomcat:8
-# Take the war and copy to webapps of tomcat
+
+# Copy the .war file from the target directory into the Tomcat webapps directory
 COPY target/*.war /usr/local/tomcat/webapps/dockeransible.war
